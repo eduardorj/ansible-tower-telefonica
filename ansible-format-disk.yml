@@ -1,6 +1,6 @@
 
 - name: "Preparando Disco"
-  host: all
+  hosts: all
 
   vars:
     device_name:
