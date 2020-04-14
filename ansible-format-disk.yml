@@ -17,4 +17,5 @@
     mount:
       path: /mnt/dados
       src: "{{ device_name }}"
+      fstype: ext4
       state: present
