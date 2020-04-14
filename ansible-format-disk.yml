@@ -13,6 +13,12 @@
       dev: "{{ device_name }}"
     become: true
 
+- name: Criando diretório /mnt/dados
+  file:
+    path: /mnt/dados
+    state: directory
+    mode: '0755'
+
   - name: Montando unidade em /mnt/dados
     mount:
       path: /mnt/dados
