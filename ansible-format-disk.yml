@@ -11,3 +11,4 @@
     filesystem:
       fstype: ext4
       dev: "{{ device_name }}"
+    become: true
