@@ -1,0 +1,10 @@
+- name: "Preparando Disco"
+  host: all
+
+  vars:
+    device_name:
+
+- name: Criando filesystem ext4
+  filesystem:
+    fstype: ext4
+    dev: "{{ device_name }}"
