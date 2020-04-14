@@ -12,3 +12,9 @@
       fstype: ext4
       dev: "{{ device_name }}"
     become: true
+
+  - name: Montando unidade em /mnt/dados
+    mount:
+      path: /mnt/dados
+      src: "{{ device_name }}"
+      state: present
