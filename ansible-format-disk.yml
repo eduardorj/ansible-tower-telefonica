@@ -19,3 +19,4 @@
       src: "{{ device_name }}"
       fstype: ext4
       state: present
+    become: true
